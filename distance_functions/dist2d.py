@@ -22,7 +22,7 @@ def euclidean_distance(p1: Point, p2: Point) -> float:
 def minkowski_distance(p1: Point, p2: Point, p: float) -> float:
     """Computes the Minkowski Distance between two 2D points."""
 
-    return (abs(p1.x - p2.x) ** p + abs(p1.y - p2.y**p)) ** (1 / p)
+    return (abs(p1.x - p2.x) ** p + abs(p1.y - p2.y) ** p) ** (1 / p)
 
 
 def chebyshev_distance(p1: Point, p2: Point) -> float:
